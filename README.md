@@ -1,6 +1,6 @@
 # Web Data Skills for AI agents: SEO audits, page to JSON, PDF text, images and video keyframes
 
-Five free agent skills that let your agent audit a website's SEO, turn a web page into structured JSON, read text and tables from PDFs, save the images on a page into a ZIP, and pick one keyframe per scene from a video. Install them in one line: `npx skills add donmangudata-ops/web-data-skills --global` (the repository name is a placeholder until the repo is published).
+Five free agent skills that let your agent audit a website's SEO, turn a web page into structured JSON, read text and tables from PDFs, save the images on a page into a ZIP, and pick one keyframe per scene from a video. Install them in one line: `npx skills add donmangudata-ops/web-data-skills --global`.
 
 by [Don Mangu](https://github.com/donmangudata-ops)
 
