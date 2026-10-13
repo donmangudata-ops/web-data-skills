@@ -1,6 +1,6 @@
-# Web Data Skills for AI agents: ten skills for SEO and speed audits, page to JSON, documents, media, airports, UK companies and visa sponsors
+# Web Data Skills for AI agents: skills for SEO and speed audits, page to JSON, documents, media, airports, UK companies and visa sponsors
 
-Ten free agent skills that let your agent audit a website's SEO, turn a web page into structured JSON, read text and tables from PDFs, save the images on a page into a ZIP, pick one keyframe per scene from a video, look up airports, run a Lighthouse speed audit, list UK companies, check UK visa sponsors and convert Word, Excel and PowerPoint files to Markdown. Install them in one line: `npx skills add donmangudata-ops/web-data-skills --global`.
+Free agent skills that let your agent audit a website's SEO, turn a web page into structured JSON, read text and tables from PDFs, save the images on a page into a ZIP, pick one keyframe per scene from a video, look up airports, run a Lighthouse speed audit, list UK companies, check UK visa sponsors and convert Word, Excel and PowerPoint files to Markdown. Install them in one line: `npx skills add donmangudata-ops/web-data-skills --global`.
 
 by [Don Mangu](https://github.com/donmangudata-ops)
 
@@ -24,6 +24,11 @@ The skills are free and MIT licensed. The Actors are paid, and they are built an
 | [lighthouse-audit-api](skills/lighthouse-audit-api/SKILL.md) | 1.0.0 | "Run a Lighthouse audit on https://example.com/pricing and tell me what slows it down." | None needed. Optional hosted version: Lighthouse Audit API |
 | [uk-companies-house-api](skills/uk-companies-house-api/SKILL.md) | 1.0.0 | "List five UK software companies (SIC 62012) with a registered office in an EC postcode that were incorporated in 2024." | None needed. Optional hosted version: Companies House API |
 | [uk-visa-sponsor-register-api](skills/uk-visa-sponsor-register-api/SKILL.md) | 1.0.0 | "Is Monzo a licensed UK visa sponsor, and for which routes?" | None needed. Optional hosted version: UK Visa Sponsor Register Search (Unofficial) |
+| [federal-register-api](skills/federal-register-api/SKILL.md) | 1.0.0 | "Which federal rules and proposed rules came out this week, and when do comments close?" | None needed. Optional hosted version: Federal Register API |
+| [openfda-scraper](skills/openfda-scraper/SKILL.md) | 1.0.0 | "Which Class I drug recalls did the FDA report in the last 30 days?" | None needed. Optional hosted version: FDA Recalls & Drug Adverse Events Data |
+| [treasury-fiscal-data-api](skills/treasury-fiscal-data-api/SKILL.md) | 1.0.0 | "What is the US national debt today, and what did the last Treasury auctions yield?" | None needed. Optional hosted version: Treasury Fiscal Data API |
+| [exchange-rates-api](skills/exchange-rates-api/SKILL.md) | 1.0.0 | "What was the official ECB euro to dollar rate last Friday?" | None needed. Optional hosted version: Exchange Rates API |
+| [doaj-open-access-api](skills/doaj-open-access-api/SKILL.md) | 1.0.0 | "Find open access climate journals with no publication fee." | None needed. Optional hosted version: DOAJ API |
 
 ## Install
 
