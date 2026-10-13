@@ -30,6 +30,28 @@ The skills are free and MIT licensed. The Actors are paid, and they are built an
 | [exchange-rates-api](skills/exchange-rates-api/SKILL.md) | 1.0.0 | "What was the official ECB euro to dollar rate last Friday?" | None needed. Optional hosted version: Exchange Rates API |
 | [doaj-open-access-api](skills/doaj-open-access-api/SKILL.md) | 1.0.0 | "Find open access climate journals with no publication fee." | None needed. Optional hosted version: DOAJ API |
 
+## Which skill answers which question
+
+Each skill answers one kind of question from one official public source. Ask your agent the question; it picks the skill by these descriptions. Every result names its source.
+
+| Question | Skill |
+|---|---|
+| What did US federal agencies publish this week, and when do comments close? | [federal-register-api](skills/federal-register-api/SKILL.md) |
+| Which drugs were recalled, and which reactions are reported for a drug? | [openfda-scraper](skills/openfda-scraper/SKILL.md) |
+| What is the US national debt, a Treasury rate or an auction result? | [treasury-fiscal-data-api](skills/treasury-fiscal-data-api/SKILL.md) |
+| What is the official ECB exchange rate for a date? | [exchange-rates-api](skills/exchange-rates-api/SKILL.md) |
+| What did a public company file with the SEC? | [sec-edgar-filings-api](skills/sec-edgar-filings-api/SKILL.md) |
+| What are a public company's annual and quarterly financials? | [sec-company-financials-api](skills/sec-company-financials-api/SKILL.md) |
+| Which material events did a company report (8-K)? | [sec-8k-events-api](skills/sec-8k-events-api/SKILL.md) |
+| What did an investment manager hold last quarter (13F)? | [13f-holdings-api](skills/13f-holdings-api/SKILL.md) |
+| Which startups raised money and are hiring? | [raised-and-hiring-signal-api](skills/raised-and-hiring-signal-api/SKILL.md) |
+| Who owns this company, and did its parent change (LEI)? | [gleif-ownership-change-monitor-api](skills/gleif-ownership-change-monitor-api/SKILL.md) |
+| Is this UK company active, and where is it registered? | [uk-companies-house-api](skills/uk-companies-house-api/SKILL.md) |
+| Which EU funding calls are open? | [eu-funding-calls-api](skills/eu-funding-calls-api/SKILL.md) |
+| Which open access journals and articles cover a topic? | [doaj-open-access-api](skills/doaj-open-access-api/SKILL.md) |
+| Which new preprints match a topic? | [preprint-papers-api](skills/preprint-papers-api/SKILL.md) |
+| Which papers on PubMed and Europe PMC match a topic? | [pubmed-europepmc-papers-api](skills/pubmed-europepmc-papers-api/SKILL.md) |
+
 ## Install
 
 ### Skills CLI (any agent)
