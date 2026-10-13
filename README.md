@@ -52,6 +52,22 @@ Each skill answers one kind of question from one official public source. Ask you
 | Which new preprints match a topic? | [preprint-papers-api](skills/preprint-papers-api/SKILL.md) |
 | Which papers on PubMed and Europe PMC match a topic? | [pubmed-europepmc-papers-api](skills/pubmed-europepmc-papers-api/SKILL.md) |
 
+## One MCP endpoint for all the hosted Actors
+
+The skills above run on your own machine. If you would rather give your agent the hosted versions, one URL loads 22 of the author's paid Actors as tools through Apify's official MCP server. Your agent sees each Actor as a tool with its input schema and calls the one that fits the question. You pay per result from your own Apify account; the author does not see your account.
+
+```text
+https://mcp.apify.com?tools=conserving_celerytop/federal-register-api,conserving_celerytop/openfda-scraper,conserving_celerytop/treasury-fiscal-data-api,conserving_celerytop/exchange-rates-api,conserving_celerytop/doaj-open-access-api,conserving_celerytop/sec-edgar-filings-api,conserving_celerytop/sec-company-financials-api,conserving_celerytop/sec-8k-events-api,conserving_celerytop/13f-holdings-api,conserving_celerytop/form-d-funding-rounds,conserving_celerytop/usaspending-awards-api,conserving_celerytop/eu-uk-public-tenders,conserving_celerytop/open-company-registries,conserving_celerytop/gleif-ownership-change-monitor-api,conserving_celerytop/live-career-page-jobs-api,conserving_celerytop/crossref-works-search,conserving_celerytop/preprint-papers-api,conserving_celerytop/web-page-to-markdown,conserving_celerytop/ai-web-scraper,conserving_celerytop/website-change-monitor,conserving_celerytop/pdf-text-extractor,conserving_celerytop/document-to-markdown-api
+```
+
+Claude Code:
+
+```bash
+claude mcp add --transport http public-data "https://mcp.apify.com?tools=conserving_celerytop/federal-register-api,conserving_celerytop/openfda-scraper,conserving_celerytop/treasury-fiscal-data-api,conserving_celerytop/exchange-rates-api,conserving_celerytop/doaj-open-access-api,conserving_celerytop/sec-edgar-filings-api,conserving_celerytop/sec-company-financials-api,conserving_celerytop/sec-8k-events-api,conserving_celerytop/13f-holdings-api,conserving_celerytop/form-d-funding-rounds,conserving_celerytop/usaspending-awards-api,conserving_celerytop/eu-uk-public-tenders,conserving_celerytop/open-company-registries,conserving_celerytop/gleif-ownership-change-monitor-api,conserving_celerytop/live-career-page-jobs-api,conserving_celerytop/crossref-works-search,conserving_celerytop/preprint-papers-api,conserving_celerytop/web-page-to-markdown,conserving_celerytop/ai-web-scraper,conserving_celerytop/website-change-monitor,conserving_celerytop/pdf-text-extractor,conserving_celerytop/document-to-markdown-api"
+```
+
+Clients with OAuth (Claude.ai, VS Code) only need the URL. Other clients send the header `Authorization: Bearer <your Apify API token>`. Agents without an Apify account can buy a prepaid, spend-capped token through Apify AGI (x402), as Apify's MCP documentation describes. Tested on 13 October 2026: all 22 tools listed.
+
 ## Install
 
 ### Skills CLI (any agent)
